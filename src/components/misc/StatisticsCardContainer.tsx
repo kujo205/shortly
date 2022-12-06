@@ -3,7 +3,7 @@ import data from '../../data/statisticItems';
 import StatisticsCard from './StatisticsCard';
 
  const StatisticsCardContainer:React.FC=()=>{
-  return (<>
+  return (<div>
    <div className='line'></div>
     <div className='cards-container'>
        
@@ -13,7 +13,7 @@ import StatisticsCard from './StatisticsCard';
 
 
     </div>
-  </>
+  </div>
   )
 }
 

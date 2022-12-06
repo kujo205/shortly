@@ -15,17 +15,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('./../../assets/images/bg-shorten-desktop.svg');
+    background-image: url('./../../assets/images/bg-boost-desktop.svg');
     background-color: var(--primary-2);
-    padding-top:3rem !important;
-    padding-bottom:3rem !important;
-
-    
+    padding-top:4rem !important;
+    padding-bottom:4rem !important;
+}
+.prefooter-section h2{
+    color: #fff;
 }
 
+
+
 .info-section-container{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    padding-top:3rem !important ;
+    padding-bottom:3rem !important ;
+    
     display: flex; 
     margin: 0 !important;
 }

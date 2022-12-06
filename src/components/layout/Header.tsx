@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './Header.css';
-import logo from './../../assets/images/logo.svg';
+import Logo from '../misc/Logo';
 import burger from './../../assets/images/burger-button.svg';
 
 const Header: React.FC = () => {
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         <header className='header'>
             <div id="logo-container" onClick={()=>setShow(pr=>!pr)}>
                 <div>
-                    <img src={logo} />
+                <Logo color='#000'/>
                 </div>
                 <div className='burger-container'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

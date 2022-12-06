@@ -13,7 +13,7 @@
   --neutral-3:hsl(255, 11%, 22%);
   --neutral-4:hsl(260, 8%, 14%);
   
-  /* font-family: 'Rubik', sans-serif; */
+  
 }
 
 .btn{
@@ -63,6 +63,11 @@ h4{
   line-height: 2rem;
   margin: 0;
 }
+ul,ol{
+  padding-inline-start: 0;
+  list-style: none;
+}
+
 p{
   color: var(--neutral-2);
 }

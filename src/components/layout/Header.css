@@ -21,8 +21,7 @@
 
 
 .navigation{
-    padding-inline-start: 0;
-    list-style: none;
+
     display: flex;
     align-items: center;
 

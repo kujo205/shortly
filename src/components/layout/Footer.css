@@ -1,0 +1,27 @@
+.footer{
+    padding: 5rem 10% ;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr repeat(4,2fr);
+    justify-items: center;
+    color: #fff;
+    background-color: var(--neutral-4);
+}
+.icon-container{
+    display: flex;
+    align-items: flex-start;
+}
+.social-media-icon{
+    margin: .5rem;
+}
+.list li{
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    color: var(--neutral-2);
+}
+
+.list li:first-child{
+    font-weight: 700;
+    color: #fff;
+}

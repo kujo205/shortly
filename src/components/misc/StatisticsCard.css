@@ -55,3 +55,36 @@
     background-color: var(--primary-1);
     top: 250px;
 }
+@media (min-width:350px) and (max-width:1250px){
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+    }
+    .line{
+        display: none;
+    }
+
+    .statistics-card .statisctic-img-container{
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%)translateX(0);
+    }
+
+    .statistics-card:not(:last-child):after{
+        
+        content: '';
+        position: absolute;
+        width: .5rem;
+        height: 5rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(1rem);
+        background-color: var(--primary-1);
+    }
+
+
+}
