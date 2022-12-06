@@ -25,3 +25,19 @@
     font-weight: 700;
     color: #fff;
 }
+
+@media (min-width:350px) and (max-width:1250px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
