@@ -1,0 +1,128 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% 0 10% ;
+    margin: auto;
+    
+}
+
+.burger-container svg{
+    width: 40px;
+    color: var(--neutral-2);
+    display: none;
+}
+
+#logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.navigation{
+    padding-inline-start: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+nav.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation>li{
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.header aside{
+    display: flex;
+    align-items: center;
+    
+}
+.burger-container svg:hover{
+    color: var(--neutral-4);
+    cursor: pointer;
+}
+
+
+@media (min-width:350px) and (max-width:1250px){
+    .header,.navigation,.navbar,.header aside{
+        flex-direction: column;
+    }
+    .header{
+       padding: 0 10% 0 10% ;;
+    
+    }
+    nav.navbar{
+        position: absolute;
+        z-index: 1;
+        top: 7rem;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin: auto;
+    }
+    #logo-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .burger-container svg{
+        display: block;
+    }
+    .navbar{
+        background-color: var(--primary-2);
+        border-radius: 10px;
+        width: 100%;
+        padding: 2rem;
+        justify-content: space-between;
+       
+    }
+    .navigation{
+        border-bottom: 1px solid var(--neutral-2);
+    }
+    .navigation,.navbar aside{
+        width: 100%;
+    } 
+    
+    .navbar aside .btn.btn-primary{
+        width: clamp(100px,90%,500px);
+      
+    }
+    .navbar aside .btn{
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    .navigation>li {
+        width: 100%;
+        color: #fff;
+        margin: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .navigation>li:last-child{
+        margin-bottom:3rem ;
+    }
+    .navigation>li:hover,.navigation>li:active{
+   color: var(--neutral-2);
+    }
+    .hide{
+        display: none !important;
+    }
+    .info-section{
+        margin-top: 4rem;
+    }
+
+    
+    
+
+}

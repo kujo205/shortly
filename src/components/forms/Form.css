@@ -1,0 +1,33 @@
+.form{
+    
+    display: flex;
+    background-color: black;
+    background-image: url('./../../assets/images/bg-boost-desktop.svg');
+    background-color: var(--primary-2);
+    padding: 2.5rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 1rem;
+    transform: translateY(-50%);
+}
+
+.form input{
+    border-radius: 5px;
+    outline: none !important;
+    border: none;
+}
+
+@media (min-width:350px) and (max-width:1250px){
+    .form{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr;
+        margin-top: 15rem !important;
+    }
+    
+    .form input[type="submit"]{
+        width: 100%;
+    }
+
+
+}
