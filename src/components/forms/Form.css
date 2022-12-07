@@ -12,10 +12,20 @@
     transform: translateY(-50%);
 }
 
+
+
 .form input{
+    text-indent: 10px;
     border-radius: 5px;
     outline: none !important;
-    border: none;
+    border: transparent 2px solid;
+}
+.invalid::placeholder{
+    color: var(--secondary);
+}
+.invalid{
+    border: 2px var(--secondary) solid !important;
+    color: var(--secondary);
 }
 
 @media (min-width:350px) and (max-width:1250px){

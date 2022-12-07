@@ -1,0 +1,62 @@
+.url-parent-container{
+
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.url-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    
+    margin: 1rem 0;
+    border-radius: 5px;
+    padding: 1rem;
+    align-items: center;
+    
+}
+
+.url-container .actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.url-container .actions button{
+    border-radius: 5px;
+    padding: .7rem 2.5rem;
+}
+.clicked{
+    background-color: var(--primary-2) !important;
+}
+.shortened-url{
+    color: var(--primary-1);
+    margin-right: 1rem;
+}
+@media (min-width:350px) and (max-width:1250px){
+    .url-container,.url-container .actions{
+        flex-direction: column;
+        
+    }
+    .url-container{
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: flex-start;
+    }
+    .url-container .actions{
+        width: 100%;
+        border-top: 1px solid gray;
+        align-items: flex-start;
+
+    }
+    .url-container .actions button{
+        width: 100%;
+        padding:.5rem 2rem ;
+        align-self: center;
+    }
+    .url-container div{
+        padding: .4rem 0;
+    }
+}

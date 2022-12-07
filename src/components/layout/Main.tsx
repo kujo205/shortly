@@ -1,15 +1,21 @@
 import React from 'react'
 import data from '../../data/statisticItems';
+import image from './../../assets/images/illustration-working.svg'
 import './Main.css';
+import UrlContainer from '../misc/UrlContainer';
 import Form from '../forms/Form';
 import StatisticsCardContainer from '../misc/StatisticsCardContainer';
 import {Statistics} from '../misc/StatisticsCard';
-
-import image from './../../assets/images/illustration-working.svg'
+import { useGlobalContext } from '../UrlContextProvider';
 
 
 
 const Main:React.FC=()=>{
+    const {urls}=useGlobalContext();
+   
+
+
+
   return (
     <main className='main'>
         
@@ -28,6 +34,7 @@ const Main:React.FC=()=>{
         </section>
         <section className='statistics-section'>
             <Form/>
+            <UrlContainer urls={urls}/>
             <h2>Advanced Statistics</h2>
             <p>Track how your links are performing across the web with our 
   advanced statistics dashboard.</p>
